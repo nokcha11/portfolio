@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+}
+.wrap { 
+  position: relative; z-index: 9999; margin: 0 auto;
+}
+
+#world {
+  position: absolute;
+  top: 0; left: 0; background: #111;
+}
+
+
+/* 내용 */
+#container { float: left; width: 1200px; height: 800px;}
+#container section { display: flex; }
+section article { 
+  position: relative;
+  width: calc(100% / 2); height: 100%; margin-top: 150px;
+}
+
+section article img { 
+  width: 100%; height: 500px;
+}
+section article video { 
+  position: absolute; top: 70px; left: 100px;
+  width: 400px; height: 200px;
+  z-index: -1;
+}
+
+/* 오른쪽 프로필 내용 */
+article .card {
+  position: absolute; min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px; box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 1px 1px 8px 1px rgba(255,255,255,.25);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content h3.heading {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  width: 100%;
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda );
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card:hover .btn {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+
+section article .card li { 
+  width: 100%; 
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+

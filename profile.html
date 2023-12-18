@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout_2.css">
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script defer src="./js/coffeeBg.js"></script>
+  <script defer src="./js/profile.js"></script>
+  <script defer src="./js/bg.js"></script>
+
+  
+  <title>profile</title>
+</head>
+<body>
+  <canvas id="world"></canvas>
+
+  <div class="wrap">
+    <header>
+      <h1><a href="bg.html">
+        <button class="logo">
+          <div class="title">
+              <span>Main</span>
+              <span>go</span>
+              <span>back</span>
+          </div>
+          <div class="clone">
+              <span>Main</span>
+              <span>go</span>
+              <span>back</span>
+          </div>
+          <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+      </button>
+      </a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="#">about</a>
+            <div class="submenu">
+              <ul>
+                <li><a href="profile.html" target="_blank">profile</a></li>
+                <li><a href="certificate.html">certificate</a></li>
+              </ul>
+              <ul>
+                <li><a href="made.html">made</a></li>
+              </ul>
+              <ul>
+                <li><a href="send.html">send</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">project</a>
+            <div class="submenu">
+              <ul>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="certificate.html">certificate</a></li>
+              </ul>
+              <ul>
+                <li><a href="made.html">made</a></li>
+              </ul>
+              <ul>
+                <li><a href="send.html">send</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">contact</a>
+            <div class="submenu">
+              <ul>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="certificate.html">certificate</a></li>
+              </ul>
+              <ul>
+                <li><a href="made.html">made</a></li>
+              </ul>
+              <ul>
+                <li><a href="send.html">send</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <section>
+        <article class="game">
+          <img src="./img/90모니터.png" alt="90's 모니터"> 
+          <video src="/달리기.mp4"  width="600" height="500" controls loop autoplay muted></video>
+        </article>
+        <article>
+          <div class="card">
+            <div class="content">
+                <h3 class="heading">Seo Yeo Jin</h3>
+                <ul class="para">
+                  <li><a href="#">대전광역시</a></li>
+                  <li>1987.8.15</li>
+                  <li>
+                    <button class="btn">
+                      <a href="tell:010-5021-8220">
+                      <span contenteditable="true" onclick="copyToClipboard(this)">☎ 010-5021-8220 
+                        <i class="fas fa-copy"></i>
+                      </span></a>
+                    </button>
+                  </li>
+                  <!-- mail-button -->
+                  <li><button class="btn">
+                  <a href="mailto:lie8220@naver.com">
+                    <span contenteditable="true" onclick="copyToClipboard(this)">E-mail lie8220@naver.com <i class="fas fa-envelope"></i> <i class="fas fa-copy"></i></span></a>
+                  </button>
+                  </li>
+                  <!-- git-button -->
+                  <li class="git">
+                    <button class="btn">
+                      <a href="https://github.com/nokcha11">Git</a>
+                    </button>
+                  </li>
+                  <!-- resum-button -->
+                  <li>
+                    <button class="btn">
+                      <a href="https://mybox.naver.com/#/my/doc-viewer/bGllODIyMHwzNDcyNTI5ODUzMzA5MDY4NjIwfEZ8MA/https%3A%2F%2Ffiles.mybox.naver.com%2F%EC%9D%B4%EB%A0%A5%EC%84%9C%2F%EC%84%9C%EC%97%AC%EC%A7%84%20%EC%9D%B4%EB%A0%A5%EC%84%9C%20%EB%B0%8F%20%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.hwp%3Fuserid%3Dlie8220%26useridx%3D17232066%26attachment%3D2%26NDriveSvcType%3DNHN%2FND-WEB%20Ver/ndrive?resourceKey=bGllODIyMHwzNDcyNTI5ODUzMzAyNzE2NDkyfER8MA&downloadable=true&editable=true">이력서</a>
+                    </button>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <address>copyright &copy; 2023 yj All right reserved.</address>
+    </footer>
+  </div>
+</body>
+</html>
